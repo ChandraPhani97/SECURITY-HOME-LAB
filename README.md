@@ -87,4 +87,13 @@ This lab supports a structured, free-tier-only, Microsoft-stack-weighted learnin
 
 
 \*Last updated: 12 September 2026\*
+## Phase 3: Active Directory & SIEM
 
+- **Windows Server 2025 VM** — promoted to Active Directory Domain Controller, domain `securitylab.local`
+- Integrated with Microsoft Sentinel via Azure Arc + AMA for centralized log collection (`SecurityEvent` table)
+- Built and enabled a custom Kerberoasting detection analytics rule (MITRE ATT&CK T1558.003)
+
+## Phase 1: Vulnerability Management
+
+- Network reconnaissance (Nmap) + authenticated vulnerability scanning (Nessus Essentials) against the domain controller
+- First written vulnerability assessment report: see `VA-Report-01-DC01-securitylab.md`
